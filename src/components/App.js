@@ -10,12 +10,12 @@ class App extends React.Component {
     }
 
     render() {
-
-    return (
-        <div className="App">
-          <Map data={this.props.data}/>
-        </div>
-    );
+        const { data } = this.props;
+        return (
+            <div className="App">
+                {data && <Map data={data} />}
+            </div>
+        );
   }
 }
 

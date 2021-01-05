@@ -24,9 +24,6 @@ const testArr = ["3.0", "3.25", "3.5", "3.75", "4", "4.25", "4.5", "5", "5.25", 
 
 class Map extends React.Component {
 
-
-
-
   setColor = () => {
     return {
       fillColor: "#F2F3F4",
@@ -34,10 +31,9 @@ class Map extends React.Component {
       weight: 1,
     }
   }
-  render()
-  {
-   const {data} = this.props;
-
+  render() {
+    const { data } = this.props;
+    console.log(data);
 
     return (
         <div className="Map">

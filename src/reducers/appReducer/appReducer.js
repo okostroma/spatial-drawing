@@ -4,7 +4,7 @@ import { ActionTypes } from '../../actions/index'
 
 
 export const initialState = {
-    data: {},
+    data: undefined,
 };
 
 export default createReducer(
